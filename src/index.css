@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --nav-height: 72px;
+}
+
+html,body,#root{height:100%}
+body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial}
+
+/* Headings tuned for premium feel */
+h1,h2,h3{color:var(--heading, #ffffff)}
+h2{font-size:2.25rem}
+
+@media(min-width:768px){
+  h2{font-size:3.5rem}
+}
+
+.container{max-width:1180px}
+
+/* Slightly stronger body contrast */
+p, li, span { color: #d7dbe9 }
+
+/* Simple glow background helper */
+.glow-blob{
+  background: radial-gradient(60% 50% at 10% 20%, rgba(91,108,255,0.22), transparent 20%), radial-gradient(50% 40% at 80% 60%, rgba(123,75,255,0.18), transparent 18%);
+}
+
+/* Smooth scrolling for anchor links */
+html { scroll-behavior: smooth; }
+
+/* Utility: ensure interactive elements are large enough on mobile */
+button, a { touch-action: manipulation; }
+
+/* Navigation styles */
+.site-header{ background: linear-gradient(180deg, rgba(3,6,23,0.6), rgba(3,6,23,0.4)); }
+.nav-link{ position: relative; color: #dbe6ff }
+.nav-link::after{ content:''; position:absolute; left:0; right:0; bottom:-6px; height:2px; background:linear-gradient(90deg,#5b6cff,#7b4bff); opacity:0; transform:scaleX(0); transition:all 220ms; }
+.nav-link:hover::after{ opacity:1; transform:scaleX(1); }
+
+
+/* Reveal animations for sections (prefers-reduced-motion respected) */
+.reveal{
+  opacity: 0;
+  transform: translateY(12px) scale(0.995);
+  transition: opacity 620ms cubic-bezier(.2,.9,.2,1), transform 620ms cubic-bezier(.2,.9,.2,1);
+}
+.reveal.show{
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+@media (prefers-reduced-motion: reduce){
+  .reveal{ transition: none; transform: none; }
+}
+
+/* Floating blob animation */
+@keyframes floatY {
+  0% { transform: translateY(0) translateX(0) scale(1); }
+  50% { transform: translateY(-8px) translateX(4px) scale(1.01); }
+  100% { transform: translateY(0) translateX(0) scale(1); }
+}
+
+@keyframes glowPulse {
+  0% { box-shadow: 0 6px 30px rgba(11,12,40,0.45); }
+  50% { box-shadow: 0 18px 50px rgba(91,108,255,0.12); }
+  100% { box-shadow: 0 6px 30px rgba(11,12,40,0.45); }
+}
+
+/* Apply to hero blob */
+.blob-animate{
+  animation: floatY 6s ease-in-out infinite;
+}
+
+/* Reusable card hover effect */
+.card-hover{ transition: transform 220ms cubic-bezier(.2,.9,.2,1), box-shadow 220ms cubic-bezier(.2,.9,.2,1); }
+.card-hover:hover{ transform: translateY(-8px); box-shadow: 0 20px 50px rgba(11,12,40,0.6); }
+
+/* Button micro-interaction */
+.btn-micro{ transition: transform 150ms ease, box-shadow 150ms ease; }
+.btn-micro:hover{ transform: translateY(-3px) scale(1.01); box-shadow: 0 8px 24px rgba(11,12,40,0.4); }
+
