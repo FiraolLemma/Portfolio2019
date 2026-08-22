@@ -22,9 +22,9 @@ export const translations = {
   },
   hero: {
     greeting: { am: 'ሰላም፣ እኔ', en: 'Hello, I’m', om: 'Akkam bultan, ani', ti: 'ሰላም፣ ኣነ' },
-    role: { am: 'የድር ልማት ባለሙያ', en: 'Full Stack Web Developer', om: 'Misooma Webii Full Stack', ti: 'ድሕረ ነጻ ድር ገንቢ' },
+    role: { am: 'የድረገፅ ልማት ባለሙያ', en: 'Full Stack Web Developer', om: 'Misooma Webii Full Stack', ti: 'ድሕረ ነጻ ድር ገንቢ' },
     intro: {
-      am: 'እኔ በዘመናዊ ድር ቴክኖሎጂዎች የሚሰሩ የድር መልክቶችን እየፈጠርኩ ነው።',
+      am: 'እኔ በዘመናዊ ድር ቴክኖሎጂዎች የሚሰሩ የድረገፅ መልክቶችን እየፈጠርኩ ነው።',
       en: 'I build modern, responsive, and high-performance web applications that solve real-world problems.',
       om: 'Aplikasiishoonii webii yeroo ammaa fi namummaa gaarii kan hojjatan kan dhiphina dhugaa furatanin hojjechaa jira.',
       ti: 'ኣነ ዘመናዊ እና ከፍተኛ አፈፃፀም ያላቸው ድር መተግበሪያዎች እገነባለን።',
@@ -36,7 +36,7 @@ export const translations = {
   about: {
     title: { am: 'ስለ እኔ', en: 'About Me', om: 'Waa’ee Koo', ti: 'ስለ እኔ' },
     text: {
-      am: 'እኔ በዘመናዊ የድር ልማት እና የቴክኖሎጂ ፈተናዎች ውስጥ ቆይቻለሁ። ሀሳቦችን እየቀየርኩ ወደ ተግባራዊ እና ምቹ የአሳሽ ልምዶች እለያለሁ።',
+      am: 'እኔ በዘመናዊ የድረገፅ ልማት እና የቴክኖሎጂ ፈተናዎች ውስጥ ቆይቻለሁ። ሀሳቦችን እየቀየርኩ ወደ ተግባራዊ እና ምቹ የአሳሽ ልምዶች እለያለሁ።',
       en: 'I am a passionate Full Stack Web Developer with experience in building web applications using modern technologies.',
       om: 'Ani misooma webii full stack kan barnoota hedduudhaan fi teeknooloojii haaraa waliin hojjata.',
       ti: 'ኣነ ሓበሬታ ብሓደጋ ድር ገንቢ ዝሆነ ኣሰራር ናይ ዘመናዊ ቴክኖሎጂ እገነባለን።',
@@ -105,7 +105,7 @@ export const translations = {
     },
   },
   footer: {
-    text: { am: 'ዘመናዊ የድር ተሞክሮዎችን በአንክበብ እገነባለሁ።', en: 'Building modern web experiences with care.', om: 'Muummee webii haaraa keessan itti gaariin ni ijaara.', ti: 'ዘመናዊ ድር ልምድን ብትኩረት ኢያዕቀበል።' },
+    text: { am: 'ዘመናዊ የድረገፅ ተሞክሮዎችን በአንክበብ እገነባለሁ።', en: 'Building modern web experiences with care.', om: 'Muummee webii haaraa keessan itti gaariin ni ijaara.', ti: 'ዘመናዊ ድር ልምድን ብትኩረት ኢያዕቀበል።' },
     rights: { am: 'ሁሉም መብቶች የተጠበቁ ናቸው።', en: 'All rights reserved.', om: 'Mirga hunda eegameera.', ti: 'ኩሉ መብት የተሓለወ እዩ።' },
   },
   common: {
