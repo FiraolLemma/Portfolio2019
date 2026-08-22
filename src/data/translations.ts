@@ -42,7 +42,7 @@ export const translations = {
       ti: 'ኣነ ሙሉ ቁልል (Full Stack) ናይ ድረገፅ መሃንዲስ እየ፣ ብዘመናዊ ቴክኖሎጂታት ናይ ድረገፅ ኣፕሊኬሽናት ብምስራሕ ተመክሮ ዘለኒ፣ ንስራሕይ ድማ ብጋለ ስሜት እፈትዎ እየ።',
     },
     cards: {
-      experience: { am: 'ልምድ', en: 'Experience', om: 'Muummee', ti: 'ልምድ' },
+      experience: { am: 'ልምድ', en: 'Experience', om: 'Muuxannoo', ti: 'ልምድ' },
       education: { am: 'ትምህርት', en: 'Education', om: 'Barnoota', ti: 'ትምህርት' },
       location: { am: 'አካባቢ', en: 'Location', om: 'Iddoo', ti: 'ኣካባቢ' },
       interests: { am: 'ፍላጎቶች', en: 'Interests', om: 'Fedhii', ti: 'ፍላጎታት' },
