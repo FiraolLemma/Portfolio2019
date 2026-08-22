@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { useLanguage } from '../context/LanguageContext'
 
 type FormValues = {
   name: string
@@ -17,6 +18,7 @@ const initialFormValues: FormValues = {
 }
 
 export default function ContactForm() {
+  const { t } = useLanguage()
   const [formValues, setFormValues] = useState<FormValues>(initialFormValues)
   const [formError, setFormError] = useState('')
   const [isSubmitting, setIsSubmitting] = useState(false)
@@ -43,15 +45,15 @@ export default function ContactForm() {
     }
 
     if (!formValues.name.trim()) {
-      return 'Please enter your name.'
+      return t('contact', 'required.name')
     }
 
     if (!formValues.subject.trim()) {
-      return 'Please enter a subject.'
+      return t('contact', 'required.subject')
     }
 
     if (!formValues.message.trim()) {
-      return 'Please enter your message.'
+      return t('contact', 'required.message')
     }
 
     return ''
@@ -91,7 +93,7 @@ export default function ContactForm() {
       setFormError('')
     } catch (error) {
       setSubmitStatus('error')
-      setFormError('Sorry, your message could not be sent right now. Please try again or email me directly.')
+      setFormError(t('contact', 'error'))
     } finally {
       setIsSubmitting(false)
     }
@@ -114,7 +116,7 @@ export default function ContactForm() {
           name="name"
           value={formValues.name}
           onChange={(e) => updateField('name', e.target.value)}
-          placeholder="Your name"
+          placeholder={t('contact', 'placeholders.name')}
           required
           className="p-3 rounded-md bg-transparent border border-white/6 text-slate-100 placeholder:text-slate-400 outline-none focus:border-white/20"
         />
@@ -124,7 +126,7 @@ export default function ContactForm() {
           name="email"
           value={formValues.email}
           onChange={(e) => updateField('email', e.target.value)}
-          placeholder="Your email"
+          placeholder={t('contact', 'placeholders.email')}
           className="p-3 rounded-md bg-transparent border border-white/6 text-slate-100 placeholder:text-slate-400 outline-none focus:border-white/20"
         />
         <input
@@ -133,7 +135,7 @@ export default function ContactForm() {
           name="subject"
           value={formValues.subject}
           onChange={(e) => updateField('subject', e.target.value)}
-          placeholder="09... / +2519..."
+          placeholder={t('contact', 'placeholders.subject')}
           required
           className="p-3 rounded-md bg-transparent border border-white/6 text-slate-100 placeholder:text-slate-400 outline-none focus:border-white/20 md:col-span-2"
         />
@@ -142,7 +144,7 @@ export default function ContactForm() {
           name="message"
           value={formValues.message}
           onChange={(e) => updateField('message', e.target.value)}
-          placeholder="Message"
+          placeholder={t('contact', 'placeholders.message')}
           rows={6}
           required
           className="p-3 rounded-md bg-transparent border border-white/6 text-slate-100 placeholder:text-slate-400 outline-none focus:border-white/20 md:col-span-2"
@@ -168,13 +170,13 @@ export default function ContactForm() {
             disabled={isSubmitting}
             className="px-4 py-2 rounded-full bg-gradient-to-r from-brandBlue to-brandPurple text-white disabled:cursor-not-allowed disabled:opacity-70"
           >
-            {isSubmitting ? 'Sending...' : 'Send Message'}
+            {isSubmitting ? t('contact', 'sending') : t('contact', 'send')}
           </button>
         </div>
 
         {submitStatus === 'success' && (
           <p className="text-sm text-emerald-400" aria-live="polite">
-            Thanks for your message. I’ll get back to you soon.
+            {t('contact', 'success')}
           </p>
         )}
 
