@@ -3,9 +3,10 @@ import React, { useEffect, useRef, useState } from 'react'
 type Props = {
   children: React.ReactNode
   className?: string
+  id?: string
 }
 
-export default function Reveal({ children, className = '' }: Props) {
+export default function Reveal({ children, className = '', id }: Props) {
   const ref = useRef<HTMLElement | null>(null)
   const [show, setShow] = useState(false)
 
@@ -30,7 +31,12 @@ export default function Reveal({ children, className = '' }: Props) {
   }, [])
 
   return (
-    <section ref={(r) => (ref.current = r)} className={`${className} reveal ${show ? 'show' : ''}`}>
+    <section
+      id={id}
+      ref={(r) => (ref.current = r)}
+      className={`${className} reveal ${show ? 'show' : ''}`}
+      style={{ scrollMarginTop: '88px' }}
+    >
       {children}
     </section>
   )
