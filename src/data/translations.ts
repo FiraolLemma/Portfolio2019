@@ -26,10 +26,10 @@ export const translations = {
     intro: {
       am: 'ዘመናዊ፣ ለተለያዩ መሳሪያዎች ተስማሚ (ምላሽ ሰጪ) እንዲሁም ከፍተኛ አፈጻጸም ያላቸው፣ በእውነተኛው ህይወት ውስጥ ያሉ ችግሮችን የሚፈቱ የድረገፅ አፕሊኬሽኖችን እሰራለሁ።',
       en: 'I build modern, responsive, and high-performance web applications that solve real-world problems.',
-      om: 'Aplikasiishoonii webii yeroo ammaa fi namummaa gaarii kan hojjatan kan dhiphina dhugaa furatanin hojjechaa jira.',
+      om: 'Ani applikeeshinii web ammayyaa, kan bifa adda addaatti qabatu, fi humna olaanaa qabu, rakkoo dhugaa addunyaa keessaa furan nan ijaara.',
       ti: 'ኣነ ዘመናዊ እና ከፍተኛ አፈፃፀም ያላቸው ድረገፅ መተግበሪያዎች እገነባለን።',
     },
-    hire: { am: 'አባሪ አስፈላጊ', en: 'Hire Me', om: 'Na Qoradhu', ti: 'ኣምርካ' },
+    hire: { am: 'አግኙኝ', en: 'Contact Me', om: 'Na Quunama', ti: 'ርክብ' },
     work: { am: 'ስራዎቼን ይመልከቱ', en: 'View My Work', om: 'Hojii Koo ilaali', ti: 'ስራይ ርአ' },
   },
   tech: { title: { am: 'ቴክ ስታክ', en: 'Tech Stack', om: 'Teeknooloojii', ti: 'ቴክ ስታክ' } },
