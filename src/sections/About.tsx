@@ -13,7 +13,7 @@ export default function About() {
         <div className="md:col-span-5">
           <div className="rounded-2xl overflow-hidden shadow-soft-lg">
             <img
-              src="/src/assets/Profile_Picture.jpg"
+              src="/images/profile/profile1.jpg"
               onError={(e) => { (e.currentTarget as HTMLImageElement).src = ProfileSVG }}
               alt="profile placeholder"
               className="w-full h-auto block"

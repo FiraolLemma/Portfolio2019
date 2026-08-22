@@ -36,7 +36,7 @@ export default function Hero() {
         <div className="md:col-span-5 flex justify-center md:justify-end relative">
           <div className="w-72 h-72 rounded-2xl glow-blob blob-animate flex items-center justify-center shadow-soft-lg" aria-hidden>
             <img
-              src="/src/assets/Profile_Picture.jpg"
+              src="/images/profile/profile1.jpg"
               onError={(e) => { (e.currentTarget as HTMLImageElement).src = ProfileSVG }}
               alt="profile placeholder"
               className="w-64 h-64"
