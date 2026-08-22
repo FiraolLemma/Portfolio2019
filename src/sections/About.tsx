@@ -29,7 +29,7 @@ export default function About() {
             <InfoCard title={t('about', 'cards.experience')} value="3+ Years" />
             <InfoCard title={t('about', 'cards.education')} value="BSc in CS" />
             <InfoCard title={t('about', 'cards.location')} value="Addis Ababa, Ethiopia" />
-            <InfoCard title={t('about', 'cards.interests')} value="Website Development, AI, Image Enhancement" />
+            <InfoCard title={t('about', 'cards.interests')} value="Website Dev, AI, Photo Editing" />
           </div>
         </div>
       </div>
