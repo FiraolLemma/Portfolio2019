@@ -82,10 +82,10 @@ export const translations = {
   contact: {
     title: { am: 'አግኙኝ', en: 'Contact', om: 'Qunnamtii', ti: 'ርክብ' },
     intro: {
-      am: 'እናክርዎት ለድረገፅ ሥራ እና ለሌሎች ፕሮጀክቶች እገኛለሁ።',
+      am: 'ያግኙኝ — ለፍሪላንስ ሥራ እና ለሚስቡ ፕሮጀክቶች ዝግጁ ነኝ።',
       en: 'Get in touch — I’m available for freelance work and interesting projects.',
-      om: 'Nu qunnamaa — hojii bilaa fi piroojektoota murteessaaaf deggaraa.',
-      ti: 'ምእታው ኣነ ናይ ፍልስፍና ስራ እና ንዘመናዊ ፕሮጀክቶች እተሓግባለን።',
+      om: 'Na quunnami — Ani hojii frilaansii fi projektota hawwataa ta’aniif qophii dha.',
+      ti: 'ተራኸቡኒ — ንፍሪላንስ ስራሕን ንዜድንቕ ፕሮጀክታትን ዝግጁ እየ።',
     },
     info: { am: 'መረጃ አግኙኝ', en: 'Contact Info', om: 'Odeeffannoo Qunnamtii', ti: 'መረጢ ርክብ' },
     send: { am: 'መልእክት ላክ', en: 'Send Message', om: 'Ergaa ergi', ti: 'መልእክት ልእኽ' },

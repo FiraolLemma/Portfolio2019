@@ -18,7 +18,7 @@ export default function Contact() {
             <h4 className="font-semibold">{t('contact', 'info')}</h4>
             <div className="mt-4 flex flex-col gap-3">
               <div className="flex items-center gap-3"><Mail /> <a href="mailto:Fraollemma0506@gmail.com" className="text-slate-200">Fraollemma0506@gmail.com</a></div>
-              <div className="flex items-center gap-3"><Phone /> <span className="text-slate-200">0925259294</span></div>
+              <div className="flex items-center gap-3"><Phone /> <span className="text-slate-200">0925259294 / 0975060586</span></div>
               <div className="flex items-center gap-3"><MapPin /> <span className="text-slate-200">Addis Ababa, Ethiopia</span></div>
             </div>
           </div>
