@@ -10,7 +10,7 @@ export default function TechStack() {
         <h3 className="text-center text-xl font-semibold">Tech Stack</h3>
         <div className="mt-6 flex gap-4 flex-wrap justify-center">
           {techs.map((t) => (
-            <TechCard key={t.name} name={t.name} color={t.color} />
+            <TechCard key={t.name} name={t.name} color={t.color} image={t.image} />
           ))}
         </div>
       </div>
