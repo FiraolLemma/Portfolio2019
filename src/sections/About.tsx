@@ -9,7 +9,12 @@ export default function About() {
       <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
         <div className="md:col-span-5">
           <div className="rounded-2xl overflow-hidden shadow-soft-lg">
-            <img src={ProfileSVG} alt="Profile" className="w-full h-auto block" />
+            <img
+              src="/src/assets/Profile_Picture.jpg"
+              onError={(e) => { (e.currentTarget as HTMLImageElement).src = ProfileSVG }}
+              alt="profile placeholder"
+              className="w-full h-auto block"
+            />
           </div>
         </div>
 
