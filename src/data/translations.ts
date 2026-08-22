@@ -22,7 +22,7 @@ export const translations = {
   },
   hero: {
     greeting: { am: 'ሰላም፣ እኔ', en: 'Hello, I’m', om: 'Akkam bultan, ani', ti: 'ሰላም፣ ኣነ' },
-    role: { am: 'የድረገፅ ልማት ባለሙያ', en: 'Full Stack Web Developer', om: 'Misooma Webii Full Stack', ti: 'ድሕረ ነጻ ድረገፅ ገንቢ' },
+    role: { am: 'የድረገፅ ልማት ባለሙያ ነኝ ።', en: 'Full Stack Web Developer', om: 'Misooma Webii Full Stack', ti: 'ድሕረ ነጻ ድረገፅ ገንቢ' },
     intro: {
       am: 'እኔ በዘመናዊ ድረገፅ ቴክኖሎጂዎች የሚሰሩ የድረገፅ መልክቶችን እየፈጠርኩ ነው።',
       en: 'I build modern, responsive, and high-performance web applications that solve real-world problems.',
