@@ -24,7 +24,7 @@ export const translations = {
     greeting: { am: 'ሰላም፣ እኔ', en: 'Hello, I’m', om: 'Akkam bultan, ani', ti: 'ሰላም፣ ኣነ' },
     role: { am: 'የድረገፅ ልማት ባለሙያ ነኝ ።', en: 'Full Stack Web Developer', om: 'Misooma Webii Full Stack', ti: 'ድሕረ ነጻ ድረገፅ ገንቢ' },
     intro: {
-      am: 'እኔ በዘመናዊ ድረገፅ ቴክኖሎጂዎች የሚሰሩ የድረገፅ መልክቶችን እየፈጠርኩ ነው።',
+      am: 'ዘመናዊ፣ ለተለያዩ መሳሪያዎች ተስማሚ (ምላሽ ሰጪ) እንዲሁም ከፍተኛ አፈጻጸም ያላቸው፣ በእውነተኛው ህይወት ውስጥ ያሉ ችግሮችን የሚፈቱ የድረገፅ አፕሊኬሽኖችን እሰራለሁ።',
       en: 'I build modern, responsive, and high-performance web applications that solve real-world problems.',
       om: 'Aplikasiishoonii webii yeroo ammaa fi namummaa gaarii kan hojjatan kan dhiphina dhugaa furatanin hojjechaa jira.',
       ti: 'ኣነ ዘመናዊ እና ከፍተኛ አፈፃፀም ያላቸው ድረገፅ መተግበሪያዎች እገነባለን።',
