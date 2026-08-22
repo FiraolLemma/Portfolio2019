@@ -18,7 +18,6 @@ export const translations = {
     projects: { am: 'ፕሮጀክቶች', en: 'Projects', om: 'Piroojektota', ti: 'ፕሮጀክቶች' },
     services: { am: 'አገልግሎቶች', en: 'Services', om: 'Tajaajila', ti: 'ኣገልግሎታት' },
     contact: { am: 'አግኙኝ', en: 'Contact', om: 'Qunnamtii', ti: 'ርክብ' },
-    cv: { am: 'CV አውርድ', en: 'Download CV', om: 'CV Buufadhu', ti: 'CV ምውራድ' },
   },
   hero: {
     greeting: { am: 'ሰላም፣ እኔ', en: 'Hello, I’m', om: 'Akkam bultan, ani', ti: 'ሰላም፣ ኣነ' },

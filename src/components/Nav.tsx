@@ -49,10 +49,6 @@ export default function Nav() {
               ))}
             </select>
           </label>
-
-          <a href="/cv.pdf" className="hidden sm:inline">
-            <Button variant="outline">{t('nav', 'cv')}</Button>
-          </a>
         </div>
 
         <div className="md:hidden">
@@ -95,10 +91,6 @@ export default function Nav() {
                     ))}
                   </select>
                 </label>
-
-                <a href="/cv.pdf">
-                  <Button variant="primary" className="w-full">{t('nav', 'cv')}</Button>
-                </a>
               </div>
             </div>
           </div>
