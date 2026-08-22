@@ -46,15 +46,6 @@ export default function ContactForm() {
       return 'Please enter your name.'
     }
 
-    if (!formValues.email.trim()) {
-      return 'Please enter your email address.'
-    }
-
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
-    if (!emailPattern.test(formValues.email.trim())) {
-      return 'Please enter a valid email address.'
-    }
-
     if (!formValues.subject.trim()) {
       return 'Please enter a subject.'
     }
@@ -134,7 +125,6 @@ export default function ContactForm() {
           value={formValues.email}
           onChange={(e) => updateField('email', e.target.value)}
           placeholder="Your email"
-          required
           className="p-3 rounded-md bg-transparent border border-white/6 text-slate-100 placeholder:text-slate-400 outline-none focus:border-white/20"
         />
         <input
