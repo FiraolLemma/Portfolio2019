@@ -22,12 +22,12 @@ export const translations = {
   },
   hero: {
     greeting: { am: 'ሰላም፣ እኔ', en: 'Hello, I’m', om: 'Akkam bultan, ani', ti: 'ሰላም፣ ኣነ' },
-    role: { am: 'የድረገፅ ልማት ባለሙያ', en: 'Full Stack Web Developer', om: 'Misooma Webii Full Stack', ti: 'ድሕረ ነጻ ድር ገንቢ' },
+    role: { am: 'የድረገፅ ልማት ባለሙያ', en: 'Full Stack Web Developer', om: 'Misooma Webii Full Stack', ti: 'ድሕረ ነጻ ድረገፅ ገንቢ' },
     intro: {
-      am: 'እኔ በዘመናዊ ድር ቴክኖሎጂዎች የሚሰሩ የድረገፅ መልክቶችን እየፈጠርኩ ነው።',
+      am: 'እኔ በዘመናዊ ድረገፅ ቴክኖሎጂዎች የሚሰሩ የድረገፅ መልክቶችን እየፈጠርኩ ነው።',
       en: 'I build modern, responsive, and high-performance web applications that solve real-world problems.',
       om: 'Aplikasiishoonii webii yeroo ammaa fi namummaa gaarii kan hojjatan kan dhiphina dhugaa furatanin hojjechaa jira.',
-      ti: 'ኣነ ዘመናዊ እና ከፍተኛ አፈፃፀም ያላቸው ድር መተግበሪያዎች እገነባለን።',
+      ti: 'ኣነ ዘመናዊ እና ከፍተኛ አፈፃፀም ያላቸው ድረገፅ መተግበሪያዎች እገነባለን።',
     },
     hire: { am: 'አባሪ አስፈላጊ', en: 'Hire Me', om: 'Na Qoradhu', ti: 'ኣምርካ' },
     work: { am: 'ስራዎቼን ይመልከቱ', en: 'View My Work', om: 'Hojii Koo ilaali', ti: 'ስራይ ርአ' },
@@ -39,7 +39,7 @@ export const translations = {
       am: 'እኔ በዘመናዊ የድረገፅ ልማት እና የቴክኖሎጂ ፈተናዎች ውስጥ ቆይቻለሁ። ሀሳቦችን እየቀየርኩ ወደ ተግባራዊ እና ምቹ የአሳሽ ልምዶች እለያለሁ።',
       en: 'I am a passionate Full Stack Web Developer with experience in building web applications using modern technologies.',
       om: 'Ani misooma webii full stack kan barnoota hedduudhaan fi teeknooloojii haaraa waliin hojjata.',
-      ti: 'ኣነ ሓበሬታ ብሓደጋ ድር ገንቢ ዝሆነ ኣሰራር ናይ ዘመናዊ ቴክኖሎጂ እገነባለን።',
+      ti: 'ኣነ ሓበሬታ ብሓደጋ ድረገፅ ገንቢ ዝሆነ ኣሰራር ናይ ዘመናዊ ቴክኖሎጂ እገነባለን።',
     },
     cards: {
       experience: { am: 'ልምድ', en: 'Experience', om: 'Muummee', ti: 'ልምድ' },
@@ -67,22 +67,22 @@ export const translations = {
       am: 'የእኔ ስራዎች የዘመናዊ ነገር እና የአፈጻጸም ያላቸው የቴክኖሎጂ ፕሮጀክቶች ናቸው።',
       en: 'A selection of projects showcasing modern UI, API design and performance.',
       om: 'Piroojektota garaagarraaf modela webii fi performance.',
-      ti: 'ናይ ዘመናዊ ድር ዕቃታት ፕሮጀክቶች ምርኣይ።',
+      ti: 'ናይ ዘመናዊ ድረገፅ ዕቃታት ፕሮጀክቶች ምርኣይ።',
     },
   },
   services: {
     title: { am: 'አገልግሎቶች', en: 'Services', om: 'Tajaajila', ti: 'ኣገልግሎታት' },
     intro: {
-      am: 'ለዘመናዊ ድር ምርቶች እና ቡድኖች የሚያስፈልጉ አገልግሎቶችን እሰጣለሁ።',
+      am: 'ለዘመናዊ ድረገፅ ምርቶች እና ቡድኖች የሚያስፈልጉ አገልግሎቶችን እሰጣለሁ።',
       en: 'I offer a range of services for modern web products and teams.',
       om: 'Tajaajila adda addaa fooyya’iinsa webii fi gareewwan keetii ni kenna.',
-      ti: 'ኣነ ናይ ዘመናዊ ድር ምርታት እና ቡድናት ኣገልግሎታት እለሚካፈል።',
+      ti: 'ኣነ ናይ ዘመናዊ ድረገፅ ምርታት እና ቡድናት ኣገልግሎታት እለሚካፈል።',
     },
   },
   contact: {
     title: { am: 'አግኙኝ', en: 'Contact', om: 'Qunnamtii', ti: 'ርክብ' },
     intro: {
-      am: 'እናክርዎት ለድር ሥራ እና ለሌሎች ፕሮጀክቶች እገኛለሁ።',
+      am: 'እናክርዎት ለድረገፅ ሥራ እና ለሌሎች ፕሮጀክቶች እገኛለሁ።',
       en: 'Get in touch — I’m available for freelance work and interesting projects.',
       om: 'Nu qunnamaa — hojii bilaa fi piroojektoota murteessaaaf deggaraa.',
       ti: 'ምእታው ኣነ ናይ ፍልስፍና ስራ እና ንዘመናዊ ፕሮጀክቶች እተሓግባለን።',
@@ -105,7 +105,7 @@ export const translations = {
     },
   },
   footer: {
-    text: { am: 'ዘመናዊ የድረገፅ ተሞክሮዎችን በአንክበብ እገነባለሁ።', en: 'Building modern web experiences with care.', om: 'Muummee webii haaraa keessan itti gaariin ni ijaara.', ti: 'ዘመናዊ ድር ልምድን ብትኩረት ኢያዕቀበል።' },
+    text: { am: 'ዘመናዊ የድረገፅ ተሞክሮዎችን በአንክበብ እገነባለሁ።', en: 'Building modern web experiences with care.', om: 'Muummee webii haaraa keessan itti gaariin ni ijaara.', ti: 'ዘመናዊ ድረገፅ ልምድን ብትኩረት ኢያዕቀበል።' },
     rights: { am: 'ሁሉም መብቶች የተጠበቁ ናቸው።', en: 'All rights reserved.', om: 'Mirga hunda eegameera.', ti: 'ኩሉ መብት የተሓለወ እዩ።' },
   },
   common: {
