@@ -120,7 +120,7 @@ export default function ContactForm() {
         />
         <input
           aria-label="email"
-          type="email"
+          type="text"
           name="email"
           value={formValues.email}
           onChange={(e) => updateField('email', e.target.value)}
@@ -133,7 +133,7 @@ export default function ContactForm() {
           name="subject"
           value={formValues.subject}
           onChange={(e) => updateField('subject', e.target.value)}
-          placeholder="Subject"
+          placeholder="09... / +2519..."
           required
           className="p-3 rounded-md bg-transparent border border-white/6 text-slate-100 placeholder:text-slate-400 outline-none focus:border-white/20 md:col-span-2"
         />
