@@ -1,6 +1,6 @@
 import React from 'react'
 import Button from '../components/Button'
-import { Linkedin, Github, Twitter, Mail } from 'lucide-react'
+import { Instagram, Music2, Send } from 'lucide-react'
 import ProfileSVG from '../assets/profile.svg'
 import Reveal from '../components/Reveal'
 import { useLanguage } from '../context/LanguageContext'
@@ -26,10 +26,9 @@ export default function Hero() {
           </div>
 
           <div className="mt-6 flex items-center gap-3">
-            <a aria-label="linkedin" className="p-2 rounded-full bg-white/5"><Linkedin /></a>
-            <a aria-label="github" className="p-2 rounded-full bg-white/5"><Github /></a>
-            <a aria-label="twitter" className="p-2 rounded-full bg-white/5"><Twitter /></a>
-            <a aria-label="email" className="p-2 rounded-full bg-white/5"><Mail /></a>
+            <a href="https://t.me/nomoreboundary" target="_blank" rel="noreferrer" aria-label="Telegram" className="p-2 rounded-full bg-white/5"><Send /></a>
+            <a href="https://www.instagram.com/fraollemma0506" target="_blank" rel="noreferrer" aria-label="Instagram" className="p-2 rounded-full bg-white/5"><Instagram /></a>
+            <a href="https://www.tiktok.com/@fraol_lemma" target="_blank" rel="noreferrer" aria-label="TikTok" className="p-2 rounded-full bg-white/5"><Music2 /></a>
           </div>
         </div>
 

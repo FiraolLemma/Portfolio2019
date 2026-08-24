@@ -1,6 +1,6 @@
 import React from 'react'
 import ContactForm from '../components/ContactForm'
-import { Mail, Phone, MapPin, Linkedin, Github, Twitter } from 'lucide-react'
+import { Mail, Phone, MapPin, Instagram, Music2, Send } from 'lucide-react'
 import Reveal from '../components/Reveal'
 import { useLanguage } from '../context/LanguageContext'
 
@@ -24,9 +24,9 @@ export default function Contact() {
           </div>
 
           <div className="flex gap-3">
-            <a aria-label="linkedin" className="p-3 rounded-md bg-white/5"><Linkedin /></a>
-            <a aria-label="github" className="p-3 rounded-md bg-white/5"><Github /></a>
-            <a aria-label="twitter" className="p-3 rounded-md bg-white/5"><Twitter /></a>
+            <a href="https://t.me/nomoreboundary" target="_blank" rel="noreferrer" aria-label="Telegram" className="p-3 rounded-md bg-white/5"><Send /></a>
+            <a href="https://www.instagram.com/fraollemma0506" target="_blank" rel="noreferrer" aria-label="Instagram" className="p-3 rounded-md bg-white/5"><Instagram /></a>
+            <a href="https://www.tiktok.com/@fraol_lemma" target="_blank" rel="noreferrer" aria-label="TikTok" className="p-3 rounded-md bg-white/5"><Music2 /></a>
           </div>
         </div>
 
