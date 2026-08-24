@@ -14,8 +14,8 @@ export default function Hero() {
         <div className="md:col-span-7">
           <p className="text-slate-300">{t('hero', 'greeting')}</p>
           <h2 className="mt-2 text-4xl sm:text-5xl font-extrabold leading-tight">
-            <span className="mr-2">Your</span>
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-brandBlue to-brandPurple">Name</span>
+            <span className="mr-2">{t('hero', 'your')}</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-brandBlue to-brandPurple">{t('hero', 'name')}</span>
           </h2>
           <p className="mt-3 text-xl text-slate-300 font-medium">{t('hero', 'role')}</p>
           <p className="mt-6 text-slate-300 max-w-xl">{t('hero', 'intro')}</p>

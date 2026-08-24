@@ -21,6 +21,8 @@ export const translations = {
   },
   hero: {
     greeting: { am: 'ሰላም፣ እኔ', en: 'Hello, I’m', om: 'Akkam bultan, ani', ti: 'ሰላም፣ ኣነ' },
+    your: { am: 'የእርስዎ', en: 'Your', om: 'Kee', ti: 'ናትካ' },
+    name: { am: 'ስም', en: 'Name', om: 'Maqaa', ti: 'ስም' },
     role: { am: 'የድረገፅ ልማት ባለሙያ ነኝ ።', en: 'Full Stack Web Developer', om: 'Misooma Webii Full Stack', ti: 'ድሕረ ነጻ ድረገፅ ገንቢ' },
     intro: {
       am: 'ዘመናዊ፣ ለተለያዩ መሳሪያዎች ተስማሚ (ምላሽ ሰጪ) እንዲሁም ከፍተኛ አፈጻጸም ያላቸው፣ በእውነተኛው ህይወት ውስጥ ያሉ ችግሮችን የሚፈቱ የድረገፅ አፕሊኬሽኖችን እሰራለሁ።',
