@@ -106,48 +106,48 @@ export default function ContactForm() {
       onSubmit={handleSubmit}
       data-netlify="true"
       data-netlify-honeypot="bot-field"
-      className="bg-white/4 p-6 rounded-2xl"
+      className="glass-panel rounded-3xl p-6 sm:p-8"
     >
       <input type="hidden" name="form-name" value="contact" />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <input
-          aria-label="name"
+          aria-label={t('contact', 'placeholders.name')}
           type="text"
           name="name"
           value={formValues.name}
           onChange={(e) => updateField('name', e.target.value)}
           placeholder={t('contact', 'placeholders.name')}
           required
-          className="p-3 rounded-md bg-transparent border border-white/6 text-slate-100 placeholder:text-slate-400 outline-none focus:border-white/20"
+          className="rounded-xl border border-white/10 bg-white/[0.035] p-3.5 text-slate-100 placeholder:text-slate-500 outline-none transition focus:border-cyan-300/50 focus:bg-white/[0.06]"
         />
         <input
-          aria-label="email"
-          type="text"
+          aria-label={t('contact', 'placeholders.email')}
+          type="email"
           name="email"
           value={formValues.email}
           onChange={(e) => updateField('email', e.target.value)}
           placeholder={t('contact', 'placeholders.email')}
-          className="p-3 rounded-md bg-transparent border border-white/6 text-slate-100 placeholder:text-slate-400 outline-none focus:border-white/20"
+          className="rounded-xl border border-white/10 bg-white/[0.035] p-3.5 text-slate-100 placeholder:text-slate-500 outline-none transition focus:border-cyan-300/50 focus:bg-white/[0.06]"
         />
         <input
-          aria-label="subject"
+          aria-label={t('contact', 'placeholders.subject')}
           type="text"
           name="subject"
           value={formValues.subject}
           onChange={(e) => updateField('subject', e.target.value)}
           placeholder={t('contact', 'placeholders.subject')}
           required
-          className="p-3 rounded-md bg-transparent border border-white/6 text-slate-100 placeholder:text-slate-400 outline-none focus:border-white/20 md:col-span-2"
+          className="rounded-xl border border-white/10 bg-white/[0.035] p-3.5 text-slate-100 placeholder:text-slate-500 outline-none transition focus:border-cyan-300/50 focus:bg-white/[0.06] md:col-span-2"
         />
         <textarea
-          aria-label="message"
+          aria-label={t('contact', 'placeholders.message')}
           name="message"
           value={formValues.message}
           onChange={(e) => updateField('message', e.target.value)}
           placeholder={t('contact', 'placeholders.message')}
           rows={6}
           required
-          className="p-3 rounded-md bg-transparent border border-white/6 text-slate-100 placeholder:text-slate-400 outline-none focus:border-white/20 md:col-span-2"
+          className="rounded-xl border border-white/10 bg-white/[0.035] p-3.5 text-slate-100 placeholder:text-slate-500 outline-none transition focus:border-cyan-300/50 focus:bg-white/[0.06] md:col-span-2"
         />
       </div>
 

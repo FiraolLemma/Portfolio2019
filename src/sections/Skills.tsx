@@ -8,13 +8,14 @@ export default function Skills() {
   const { t } = useLanguage()
 
   return (
-    <Reveal id="skills" className="mt-12 py-12">
-      <h3 className="text-2xl font-semibold">{t('skills', 'title')}</h3>
-      <p className="mt-2 text-slate-300 max-w-2xl">{t('skills', 'intro')}</p>
+    <Reveal id="skills" className="mt-20 py-16 lg:mt-24 lg:py-20">
+      <p className="section-kicker">What I use</p>
+      <h3 className="section-heading">{t('skills', 'title')}</h3>
+      <p className="mt-4 max-w-2xl text-base leading-7 text-slate-400">{t('skills', 'intro')}</p>
 
-      <div className="mt-6 grid grid-cols-1 md:grid-cols-4 gap-6">
-        <div>
-          <h4 className="font-medium mb-3">{t('skills', 'frontend')}</h4>
+      <div className="mt-10 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
+        <div className="rounded-3xl bg-white/[0.025] p-5">
+          <h4 className="mb-4 font-semibold text-cyan-100">{t('skills', 'frontend')}</h4>
           <div className="flex flex-col gap-3">
             {skills.frontend.map((s) => (
               <SkillBar key={s.name} name={s.name} value={s.value} />
@@ -22,8 +23,8 @@ export default function Skills() {
           </div>
         </div>
 
-        <div>
-          <h4 className="font-medium mb-3">{t('skills', 'backend')}</h4>
+        <div className="rounded-3xl bg-white/[0.025] p-5">
+          <h4 className="mb-4 font-semibold text-cyan-100">{t('skills', 'backend')}</h4>
           <div className="flex flex-col gap-3">
             {skills.backend.map((s) => (
               <SkillBar key={s.name} name={s.name} value={s.value} />
@@ -31,8 +32,8 @@ export default function Skills() {
           </div>
         </div>
 
-        <div>
-          <h4 className="font-medium mb-3">{t('skills', 'database')}</h4>
+        <div className="rounded-3xl bg-white/[0.025] p-5">
+          <h4 className="mb-4 font-semibold text-cyan-100">{t('skills', 'database')}</h4>
           <div className="flex flex-col gap-3">
             {skills.database.map((s) => (
               <SkillBar key={s.name} name={s.name} value={s.value} />
@@ -40,8 +41,8 @@ export default function Skills() {
           </div>
         </div>
 
-        <div>
-          <h4 className="font-medium mb-3">{t('skills', 'tools')}</h4>
+        <div className="rounded-3xl bg-white/[0.025] p-5">
+          <h4 className="mb-4 font-semibold text-cyan-100">{t('skills', 'tools')}</h4>
           <div className="flex flex-col gap-3">
             {skills.tools.map((s) => (
               <SkillBar key={s.name} name={s.name} value={s.value} />

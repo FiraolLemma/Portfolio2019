@@ -10,10 +10,10 @@ export default function TechCard({ name, color = '#1f2937', image }: Props) {
   const [imageFailed, setImageFailed] = useState(false)
 
   return (
-    <div className="flex flex-col items-center gap-2 p-4 bg-white/3 rounded-xl min-w-[100px] card-hover">
+    <div className="group flex min-w-0 flex-col items-center gap-3 rounded-2xl p-3 text-center card-hover bg-white/[0.025]">
       <div
         style={{ background: color }}
-        className="w-14 h-14 rounded-md overflow-hidden flex items-center justify-center text-white font-semibold"
+        className="flex h-11 w-11 items-center justify-center overflow-hidden rounded-xl text-white font-semibold shadow-lg transition-transform group-hover:scale-110"
       >
         {!image || imageFailed ? (
           <span className="text-lg">{name[0]}</span>
@@ -26,7 +26,7 @@ export default function TechCard({ name, color = '#1f2937', image }: Props) {
           />
         )}
       </div>
-      <div className="text-sm text-slate-200">{name}</div>
+      <div className="truncate text-xs font-medium text-slate-300">{name}</div>
     </div>
   )
 }

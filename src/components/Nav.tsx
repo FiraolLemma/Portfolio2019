@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Logo from './Logo'
 import Button from './Button'
-import { Menu, X } from 'lucide-react'
+import { ArrowUpRight, Menu, X } from 'lucide-react'
 import { languageOptions, type Language } from '../data/translations'
 import { useLanguage } from '../context/LanguageContext'
 
@@ -16,6 +16,7 @@ const links = [
 
 export default function Nav() {
   const [open, setOpen] = useState(false)
+  const [active, setActive] = useState('#home')
   const { language, setLanguage, t } = useLanguage()
 
   return (
@@ -27,7 +28,7 @@ export default function Nav() {
 
         <nav className="hidden md:flex items-center gap-8">
           {links.map((l) => (
-            <a key={l.href} href={l.href} className="nav-link px-2 py-3 transition-colors">
+            <a key={l.href} href={l.href} onClick={() => setActive(l.href)} className={`nav-link px-2 py-3 transition-colors ${active === l.href ? 'nav-link-active' : ''}`}>
               {t('nav', l.key)}
             </a>
           ))}
@@ -49,10 +50,13 @@ export default function Nav() {
               ))}
             </select>
           </label>
+          <a href="#contact" className="inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 text-sm font-semibold text-[#080d24] transition hover:bg-cyan-200">
+            {t('nav', 'contact')} <ArrowUpRight size={15} />
+          </a>
         </div>
 
         <div className="md:hidden">
-          <button aria-label="menu" onClick={() => setOpen((s) => !s)} className="p-2 rounded-md bg-white/5">
+          <button aria-label={open ? 'Close menu' : 'Open menu'} aria-expanded={open} onClick={() => setOpen((s) => !s)} className="p-2 rounded-md bg-white/5">
             {open ? <X size={20} /> : <Menu size={20} />}
           </button>
         </div>
@@ -69,7 +73,7 @@ export default function Nav() {
 
               <nav className="mt-8 flex flex-col gap-4">
                 {links.map((l) => (
-                  <a key={l.href} href={l.href} onClick={() => setOpen(false)} className="text-slate-100 text-lg py-3">
+                    <a key={l.href} href={l.href} onClick={() => { setActive(l.href); setOpen(false) }} className="text-slate-100 text-lg py-3">
                     {t('nav', l.key)}
                   </a>
                 ))}

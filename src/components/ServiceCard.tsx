@@ -7,10 +7,10 @@ type Props = {
 
 export default function ServiceCard({ title, description }: Props) {
   return (
-    <div className="bg-white/4 p-6 rounded-2xl shadow-soft-lg card-hover">
-      <div className="w-12 h-12 rounded-md bg-gradient-to-br from-brandBlue to-brandPurple flex items-center justify-center text-white font-semibold">{title[0]}</div>
-      <h4 className="mt-4 font-semibold">{title}</h4>
-      <p className="mt-2 text-slate-300 text-sm">{description}</p>
-    </div>
+    <article className="group rounded-3xl bg-white/[0.035] p-6 shadow-soft-lg card-hover">
+      <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-br from-brandBlue to-brandPurple text-lg font-bold text-white shadow-lg shadow-indigo-950/50">{title[0]}</div>
+      <h4 className="mt-5 font-semibold">{title}</h4>
+      <p className="mt-2 text-sm leading-6 text-slate-400">{description}</p>
+    </article>
   )
 }

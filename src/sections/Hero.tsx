@@ -1,7 +1,6 @@
 import React from 'react'
 import Button from '../components/Button'
-import { Instagram, Music2, Send } from 'lucide-react'
-import ProfileSVG from '../assets/profile.svg'
+import { ArrowRight, Instagram, Mail, Music2, Send } from 'lucide-react'
 import Reveal from '../components/Reveal'
 import { useLanguage } from '../context/LanguageContext'
 
@@ -9,36 +8,41 @@ export default function Hero() {
   const { t } = useLanguage()
 
   return (
-    <Reveal id="home" className="pt-12 pb-20">
-      <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
-        <div className="md:col-span-7">
-          <p className="text-slate-300">{t('hero', 'greeting')}</p>
-          <h2 className="mt-2 text-4xl sm:text-5xl font-extrabold leading-tight">
-            <span className="mr-2">{t('hero', 'your')}</span>
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-brandBlue to-brandPurple">{t('hero', 'name')}</span>
+    <Reveal id="home" className="relative flex min-h-[calc(100vh-80px)] items-center overflow-hidden py-14 lg:py-20">
+      <div className="hero-grid" aria-hidden="true" />
+      <div className="grid w-full grid-cols-1 items-center gap-14 lg:grid-cols-12 lg:gap-8">
+        <div className="relative z-10 lg:col-span-7">
+          <p className="eyebrow"><span className="eyebrow-dot" /> {t('hero', 'greeting')}</p>
+          <h2 className="mt-5 max-w-3xl text-5xl font-black tracking-[-0.04em] leading-[0.98] sm:text-7xl lg:text-8xl">
+            <span className="mr-3 block">{t('hero', 'your')}</span>
+            <span className="gradient-text">{t('hero', 'name')}</span>
           </h2>
-          <p className="mt-3 text-xl text-slate-300 font-medium">{t('hero', 'role')}</p>
-          <p className="mt-6 text-slate-300 max-w-xl">{t('hero', 'intro')}</p>
+          <p className="mt-7 text-xl font-semibold text-slate-200 sm:text-2xl">{t('hero', 'role')}</p>
+          <p className="mt-5 max-w-xl text-base leading-8 text-slate-400 sm:text-lg">{t('hero', 'intro')}</p>
+          <p className="mt-3 max-w-xl text-sm leading-7 text-slate-500">{t('hero', 'supporting')}</p>
 
-          <div className="mt-8 flex flex-col sm:flex-row items-center gap-4">
-            <Button className="w-full sm:w-auto">{t('hero', 'hire')}</Button>
-            <Button variant="outline" className="w-full sm:w-auto">{t('hero', 'work')}</Button>
+          <div className="mt-9 flex flex-col items-stretch gap-3 sm:flex-row sm:items-center">
+            <Button href="#contact" className="w-full sm:w-auto">{t('hero', 'hire')} <ArrowRight size={17} /></Button>
+            <Button href="#projects" variant="outline" className="w-full sm:w-auto">{t('hero', 'work')} <ArrowRight size={17} /></Button>
           </div>
 
           <div className="mt-6 flex items-center gap-3">
-            <a href="https://t.me/nomoreboundary" target="_blank" rel="noreferrer" aria-label="Telegram" className="p-2 rounded-full bg-white/5"><Send /></a>
-            <a href="https://www.instagram.com/fraollemma0506" target="_blank" rel="noreferrer" aria-label="Instagram" className="p-2 rounded-full bg-white/5"><Instagram /></a>
-            <a href="https://www.tiktok.com/@fraol_lemma" target="_blank" rel="noreferrer" aria-label="TikTok" className="p-2 rounded-full bg-white/5"><Music2 /></a>
+            <a href="https://t.me/nomoreboundary" target="_blank" rel="noreferrer" aria-label="Telegram" className="social-link"><Send size={18} /></a>
+            <a href="https://www.instagram.com/fraollemma0506" target="_blank" rel="noreferrer" aria-label="Instagram" className="social-link"><Instagram size={18} /></a>
+            <a href="https://www.tiktok.com/@fraol_lemma" target="_blank" rel="noreferrer" aria-label="TikTok" className="social-link"><Music2 size={18} /></a>
+            <a href="mailto:Fraollemma0506@gmail.com" aria-label="Email" className="social-link"><Mail size={18} /></a>
           </div>
         </div>
 
-        <div className="md:col-span-5 flex justify-center md:justify-end relative">
-          <div className="w-72 h-72 rounded-2xl glow-blob blob-animate flex items-center justify-center shadow-soft-lg" aria-hidden>
+        <div className="relative flex min-h-[360px] items-center justify-center lg:col-span-5 lg:min-h-[540px] lg:justify-end">
+          <div className="hero-orbit hero-orbit-one" aria-hidden="true" />
+          <div className="hero-orbit hero-orbit-two" aria-hidden="true" />
+          <div className="hero-portrait-wrap blob-animate">
+            <div className="hero-portrait-glow" aria-hidden="true" />
             <img
               src="/images/profile/profile1.jpg"
-              onError={(e) => { (e.currentTarget as HTMLImageElement).src = ProfileSVG }}
-              alt="profile placeholder"
-              className="w-64 h-64"
+              alt="Fraol Lemma"
+              className="hero-portrait"
             />
           </div>
         </div>

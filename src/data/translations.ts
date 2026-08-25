@@ -30,6 +30,12 @@ export const translations = {
       om: 'Ani applikeeshinii web ammayyaa, kan bifa adda addaatti qabatu, fi humna olaanaa qabu, rakkoo dhugaa addunyaa keessaa furan nan ijaara.',
       ti: 'ኣነ ናይ ዘመናዊ፣ ንዝተፈላለዩ መሳርሕቲ ዝምዕዓል፣ ከምኡውን ልዑል ክእለት ዘለዎ ናይ ድረገፅ ኣፕሊኬሽናት እሰርሕ፣ እዞም ነቲ ኣብ ህይወት ዘሎ ናይ ሓቂ ጸገማት ዝፈትሑ እዮም።',
     },
+    supporting: {
+      am: 'ንፁህ ኮድ፣ አሳቢ UX እና አስተማማኝ ዲጂታል ምርቶችን መገንባት እወዳለሁ።',
+      en: 'Passionate about clean code, thoughtful UX and turning ideas into reliable digital products.',
+      om: 'Koodii qulqulluu, UX yaadame fi yaadota gara oomisha dijitaalaa amanamaatti jijjiiruu nan jaalladha.',
+      ti: 'ንጹህ ኮድ፣ ኣስተዋዓይ UX ከምኡውን ሓሳባት ናብ እሙናት ዲጂታላዊ ምርታት ምቕያር እፈቱ።',
+    },
     hire: { am: 'አግኙኝ', en: 'Contact Me', om: 'Na Quunama', ti: 'ርክብ' },
     work: { am: 'ስራዎቼን ይመልከቱ', en: 'View My Work', om: 'Hojii Koo ilaali', ti: 'ስራይ ርአ' },
   },
