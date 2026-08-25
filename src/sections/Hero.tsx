@@ -8,7 +8,7 @@ export default function Hero() {
   const { t } = useLanguage()
 
   return (
-    <Reveal id="home" className="relative flex min-h-[calc(100vh-80px)] items-center overflow-hidden py-14 lg:py-20">
+    <Reveal id="home" className="relative flex min-h-[calc(100vh-80px)] items-center overflow-hidden pt-0 pb-14 lg:py-20">
       <div className="hero-grid" aria-hidden="true" />
       <div className="grid w-full grid-cols-1 items-center gap-14 lg:grid-cols-12 lg:gap-8">
         <div className="relative z-10 lg:col-span-7">
