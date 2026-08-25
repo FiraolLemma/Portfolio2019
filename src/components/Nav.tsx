@@ -81,7 +81,6 @@ export default function Nav() {
             <span className={`hamburger-line ${open ? 'hamburger-line-middle-open' : ''}`} />
             <span className={`hamburger-line ${open ? 'hamburger-line-bottom-open' : ''}`} />
           </button>
-          </div>
         </div>
 
         <div id="mobile-navigation" className={`mobile-navigation ${open ? 'mobile-navigation-open' : ''}`} aria-hidden={!open}>
@@ -112,6 +111,7 @@ export default function Nav() {
                 </label>
               </div>
         </div>
+            </div>
     </header>
   )
 }
