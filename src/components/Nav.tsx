@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import Logo from './Logo'
 import Button from './Button'
-import { ArrowUpRight, Menu, X } from 'lucide-react'
+import { ArrowUpRight } from 'lucide-react'
 import { languageOptions, type Language } from '../data/translations'
 import { useLanguage } from '../context/LanguageContext'
 
@@ -17,11 +17,31 @@ const links = [
 export default function Nav() {
   const [open, setOpen] = useState(false)
   const [active, setActive] = useState('#home')
+  const mobileMenuRef = useRef<HTMLDivElement | null>(null)
   const { language, setLanguage, t } = useLanguage()
+
+  useEffect(() => {
+    function closeOnEscape(event: KeyboardEvent) {
+      if (event.key === 'Escape') setOpen(false)
+    }
+
+    function closeOnOutsideClick(event: MouseEvent) {
+      if (open && mobileMenuRef.current && !mobileMenuRef.current.contains(event.target as Node)) {
+        setOpen(false)
+      }
+    }
+
+    document.addEventListener('keydown', closeOnEscape)
+    document.addEventListener('mousedown', closeOnOutsideClick)
+    return () => {
+      document.removeEventListener('keydown', closeOnEscape)
+      document.removeEventListener('mousedown', closeOnOutsideClick)
+    }
+  }, [open])
 
   return (
     <header className="fixed top-0 left-0 right-0 z-40 backdrop-blur-sm site-header border-b border-white/6">
-      <div className="container mx-auto px-6 h-18 flex items-center justify-between" style={{height:72}}>
+      <div ref={mobileMenuRef} className="container mx-auto px-6 h-18 flex items-center justify-between mobile-nav-inner" style={{height:72}}>
         <div className="flex items-center gap-6">
           <Logo />
         </div>
@@ -55,37 +75,32 @@ export default function Nav() {
           </a>
         </div>
 
-        <div className="md:hidden">
-          <button aria-label={open ? 'Close menu' : 'Open menu'} aria-expanded={open} onClick={() => setOpen((s) => !s)} className="p-2 rounded-md bg-white/5">
-            {open ? <X size={20} /> : <Menu size={20} />}
+        <div className="md:hidden mobile-menu-control">
+          <button type="button" aria-label={open ? 'Close menu' : 'Open menu'} aria-expanded={open} aria-controls="mobile-navigation" onClick={() => setOpen((s) => !s)} className="mobile-menu-button">
+            <span className={`hamburger-line ${open ? 'hamburger-line-top-open' : ''}`} />
+            <span className={`hamburger-line ${open ? 'hamburger-line-middle-open' : ''}`} />
+            <span className={`hamburger-line ${open ? 'hamburger-line-bottom-open' : ''}`} />
           </button>
+          </div>
         </div>
 
-        {open && (
-          <div className="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm md:hidden">
-            <div className="px-6 py-6 h-full flex flex-col">
-              <div className="flex items-center justify-between">
-                <Logo />
-                <button aria-label="close menu" onClick={() => setOpen(false)} className="p-2 rounded-md bg-white/5">
-                  <X size={20} />
-                </button>
-              </div>
-
-              <nav className="mt-8 flex flex-col gap-4">
+        <div id="mobile-navigation" className={`mobile-navigation ${open ? 'mobile-navigation-open' : ''}`} aria-hidden={!open}>
+              <nav className="mobile-navigation-links">
                 {links.map((l) => (
-                    <a key={l.href} href={l.href} onClick={() => { setActive(l.href); setOpen(false) }} className="text-slate-100 text-lg py-3">
+                    <a key={l.href} href={l.href} tabIndex={open ? 0 : -1} onClick={() => { setActive(l.href); setOpen(false) }} className="mobile-navigation-link">
                     {t('nav', l.key)}
                   </a>
                 ))}
               </nav>
 
-              <div className="mt-auto space-y-4">
+              <div className="mobile-navigation-footer">
                 <label className="flex items-center justify-between gap-2 rounded-xl border border-white/10 bg-white/5 px-3 py-2 text-sm text-slate-200">
                   <span>{t('nav', 'language')}</span>
                   <select
                     aria-label={t('nav', 'language')}
                     value={language}
                     onChange={(e) => setLanguage(e.target.value as Language)}
+                    tabIndex={open ? 0 : -1}
                     className="bg-transparent text-slate-100 outline-none"
                   >
                     {languageOptions.map((option) => (
@@ -96,9 +111,7 @@ export default function Nav() {
                   </select>
                 </label>
               </div>
-            </div>
-          </div>
-        )}
+        </div>
       </div>
     </header>
   )
