@@ -46,7 +46,7 @@ export default function Nav() {
           <Logo />
         </div>
 
-        <nav className="hidden md:flex items-center gap-8">
+        <nav className="hidden md:flex items-center gap-8 border-l border-white/10 pl-8 text-sm text-slate-400 border-l-white/10 border-l-white/10">
           {links.map((l) => (
             <a key={l.href} href={l.href} onClick={() => setActive(l.href)} className={`nav-link px-2 py-3 transition-colors ${active === l.href ? 'nav-link-active' : ''}`}>
               {t('nav', l.key)}
