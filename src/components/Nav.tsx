@@ -112,7 +112,6 @@ export default function Nav() {
                 </label>
               </div>
         </div>
-      </div>
     </header>
   )
 }
