@@ -12,7 +12,7 @@ export default function About() {
         <div className="md:col-span-5">
           <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] p-2 shadow-soft-lg">
             <img
-              src="/images/profile/profile1.jpg"
+              src="/images/profile/Profile_Picture2.png"
               alt="Fraol Lemma working as a web developer"
               loading="lazy"
               className="block h-[360px] w-full rounded-2xl object-cover object-top sm:h-[460px]"

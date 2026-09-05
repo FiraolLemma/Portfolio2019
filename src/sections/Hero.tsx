@@ -40,7 +40,7 @@ export default function Hero() {
           <div className="hero-portrait-wrap blob-animate">
             <div className="hero-portrait-glow" aria-hidden="true" />
             <img
-              src="/images/profile/profile1.jpg"
+              src="/images/profile/Profile_Picture2.png"
               alt="Fraol Lemma"
               className="hero-portrait"
             />
